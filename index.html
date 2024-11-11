@@ -1,0 +1,569 @@
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href={% static "css/bootstrap.css"%}/>
+
+  <!-- fonts style -->
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap"/>
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet"  href={% static "css/style.css"%}/>
+  <!-- responsive style -->
+  <link  rel="stylesheet" href={% static "css/responsive.css"%}/>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Site Metas -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content=""/>
+
+  <title>FITGYM</title>
+    <style>
+    .hero_area {
+        background-image: url("{% static 'images/55.jpg' %}");
+        background-size: cover;
+        background-attachment: fixed;
+         height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+    }
+    .custom_nav-container .nav_search-btn {
+  background-image: url({% static 'images/search-icon.png' %});
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position-y: 7px;}
+    
+    .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url({% static 'images/menu.png' %});
+     border: 4px solid #ffffff;
+    }
+    
+    .us_section {
+  background-image: url({% static 'images/us-bg.jpg' %});
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+    
+.heathy_section {
+  background-image: url({% static 'images/healthy-bg.jpg'%});
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+  text-align: center;
+}
+.trainer_section {
+  background-image: url({% static 'images/trainer-bg.jpg'%});
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+.info_items .item .img-box.box-1 {
+  background-image: url({% static 'images/location-white.png'%});
+}
+
+.info_items .item .img-box.box-2 {
+  background-image: url({% static 'images/telephone-white.png'%});
+}
+
+.info_items .item .img-box.box-3 {
+  background-image: url({% static 'images/envelope-white.png'%});
+}
+</style>
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Fitgym
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href={% url 'index'%}>Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href={% url 'why'%}>Why us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href={% url 'trainer'%}>trainers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h3>
+                      Fitness
+                    </h3>
+                    <h2>
+                      Training
+                    </h2>
+                    <h1>
+                      Fitgym
+                    </h1>
+                    <p>
+                      Our gym is more than just a place to work out—it’s a community focused on building strength, confidence, and resilience. With state-of-the-art equipment, group classes, and personalized training programs, we’re here to support every fitness journey. No matter your level, join us to push limits and reach new heights.
+                    </p>
+                    <div class="">
+                       <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h3>
+                      Fitness
+                    </h3>
+                    <h2>
+                      Training
+                    </h2>
+                    <h1>
+                      Neogym
+                    </h1>
+                    <p>
+                      Discover a gym designed to fit your lifestyle. From high-intensity interval training to relaxing yoga sessions, we offer diverse workout options to suit everyone’s needs. With a supportive environment and expert trainers, you’ll find the guidance and motivation you need to achieve your fitness goals, all while having fun.
+                    </p>
+                    <div class="">
+                       <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h3>
+                      Fitness
+                    </h3>
+                    <h2>
+                      Training
+                    </h2>
+                    <h1>
+                      Fitgym
+                    </h1>
+                    <p>
+                      Our gym combines top-tier equipment with knowledgeable trainers, creating an environment where you can make real progress. Whether you're here to build muscle, increase endurance, or just get moving, we’re committed to helping you turn your fitness goals into achievements. Join a community that supports your growth, inside and out.
+                    </p>
+                    <div class="">
+                       <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h3>
+                      Fitness
+                    </h3>
+                    <h2>
+                      Training
+                    </h2>
+                    <h1>
+                      Fitgym
+                    </h1>
+                    <p>
+                      With a variety of fitness zones, cutting-edge machines, and group classes, our gym has something for everyone. Get ready to sweat, stretch, and strengthen in a vibrant space dedicated to wellness. Our team is here to help you maximize each workout, ensuring you have the tools and guidance to stay motivated and inspired.
+                    </p>
+                    <div class="">
+                      <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="col-lg-10 col-md-11 mx-auto">
+                <div class="detail-box">
+                  <div>
+                    <h3>
+                      Fitness
+                    </h3>
+                    <h2>
+                      Training
+                    </h2>
+                    <h1>
+                      Fitgym
+                    </h1>
+                    <p>
+                      Our gym is a welcoming space for everyone, from beginners taking their first steps to athletes pushing their limits. With a mix of cardio, strength, and flexibility-focused areas, plus customized training and nutrition advice, we offer a complete fitness experience. Start your journey with us, and let’s make health and wellness a lifestyle you’ll love.
+                    </p>
+                    <div class="">
+                     <a class="nav-link" href={% url 'contact'%}>Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- Us section -->
+
+  <section class="us_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Why Choose Us
+        </h2>
+      </div>
+
+      <div class="us_container ">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src={% static "images/u-1.png" %} alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  QUALITY EQUIPMENT
+                </h5>
+                <p>
+                  Our gym is equipped with the latest, top-of-the-line machines and tools, designed to cater to all fitness levels and goals. From advanced cardio stations to weight-training machines, we ensure each piece of equipment meets high standards for safety and performance. Train with confidence, knowing you have access to the best resources to achieve your fitness objectives.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src={% static "images/u-4.png"%} alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  NUTRITION
+                </h5>
+                <p>
+                  We believe that nutrition is key to maximizing your fitness results. Our expert team is here to provide personalized nutrition guidance, helping you understand how to fuel your body effectively. From balanced meal plans to supplement advice, we’re committed to supporting your overall wellness journey through mindful, nourishing choices.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src={% static "images/u-2.png"%} alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  HEALTHY DIET PLAN
+                </h5>
+                <p>
+                  Our tailored diet plans are designed to fit your unique lifestyle and fitness goals. Whether you’re looking to build muscle, lose weight, or simply maintain a healthy routine, our plans focus on wholesome, balanced nutrition that enhances your workouts and keeps you feeling your best. Enjoy a sustainable approach to eating that fuels your journey to peak health.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <div class="img-box">
+                <img src={% static "images/u-3.png"%} alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  SPORT TRAINING
+                </h5>
+                <p>
+                 For athletes and fitness enthusiasts alike, our sport training programs are crafted to enhance agility, strength, and endurance. With specialized workouts and expert coaching, you’ll improve your performance in your chosen sport or activity. From speed drills to strength conditioning, we provide the training foundation needed to excel in any athletic pursuit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end us section -->
+
+
+  <!-- heathy section -->
+
+  <section class="heathy_section layout_padding">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <div class="detail-box">
+            <h2>
+              HEALTHY MIND, HEALTHY BODY
+            </h2>
+            <p>
+             Achieving physical fitness is only part of the equation—mental well-being is equally essential. Our approach focuses on nurturing both the body and the mind. Through mindful practices, stress-relief techniques, and a supportive community, we create a balanced environment that promotes mental clarity, emotional resilience, and overall health. Embrace a holistic lifestyle where mental and physical wellness go hand in hand, helping you feel your best inside and out.
+            </p>
+            <div class="btn-box">
+             <a class="nav-link" href={% url 'why'%}>READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- end heathy section -->
+
+  <!-- trainer section -->
+
+  <section class="trainer_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Our Gym Trainers
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="box">
+            <div class="name">
+              <h5>
+                 John
+              </h5>
+            </div>
+            <div class="img-box">
+              <img src={% static "images/66.jpg"%} alt="">
+            </div>
+            <div class="social_box">
+              <a href="">
+                <img src={% static "images/facebook-logo.png"%} alt="">
+              </a>
+              <a href="">
+                <img src={%  static "images/twitter.png" %} alt="">
+              </a>
+              <a href="">
+                <img src={% static "images/instagram-logo.png"%} alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="box">
+            <div class="name">
+              <h5>
+                Jean 
+              </h5>
+            </div>
+            <div class="img-box">
+              <img src={% static "images/44.jpg" %} alt="">
+            </div>
+            <div class="social_box">
+              <a href="">
+                <img src={% static "images/facebook-logo.png"%} alt="">
+              </a>
+              <a href="">
+                <img src={% static "images/twitter.png"%} alt="">
+              </a>
+              <a href="">
+                <img src={% static "images/instagram-logo.png"%} alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="box">
+            <div class="name">
+              <h5>
+                Alex 
+              </h5>
+            </div>
+            <div class="img-box">
+              <img src={% static "images/33.jpg" %} alt="">
+            </div>
+            <div class="social_box">
+              <a href="">
+                <img  src={% static "images/facebook-logo.png"%} alt="">
+              </a>
+              <a href="">
+                <img src={% static "images/twitter.png"%} alt="">
+              </a>
+              <a href="">
+                <img src={% static "images/instagram-logo.png"%} alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end trainer section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img-box">
+            <img src={% static "images/11.jpg"%} alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+            <div class="heading_container">
+              <h2>
+                Contact Us
+              </h2>
+            </div>
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="d-flex ">
+                <button>
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end contact section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Nairobi
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                0748691728
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                akiruclaudia@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; 2024 All Rights Reserved.
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src={% static "js/jquery-3.4.1.min.js"%}></script>
+  <script src={% static "js/bootstrap.js"%}></script>
+
+</body>
+
+</html>
